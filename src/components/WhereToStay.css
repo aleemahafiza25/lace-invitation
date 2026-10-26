@@ -1,0 +1,364 @@
+
+.where-to-stay {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 80px 24px 100px;
+  overflow: hidden;
+  background: #f8f5f2;
+  color: #572532;
+}
+
+.stay-intro {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stay-section-title {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(44px, 7vw, 68px);
+  font-weight: 400;
+  line-height: 1.15;
+  color: #572532;
+}
+
+.stay-section-description {
+  max-width: 440px;
+  margin: 22px auto 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #80666c;
+}
+
+.stay-hotels {
+  width: 100%;
+  max-width: 380px;
+  margin: 25px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Hotel card with the decorative frame image */
+.stay-card {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-height: 720px;
+  box-sizing: border-box;
+  background-image: url("/assets/hotel-card-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+/* Keep all hotel information inside the frame */
+.stay-card-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 720px;
+  box-sizing: border-box;
+  padding: 190px 48px 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Hotel name */
+.stay-hotel-name {
+  width: 100%;
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(29px, 5vw, 40px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #572532;
+}
+
+/* Hotel information */
+.stay-hotel-details {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stay-hotel-details p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #80666c;
+  overflow-wrap: anywhere;
+}
+
+.stay-label {
+  color: #a17c83;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+/* Hotel description */
+.stay-description {
+  width: 100%;
+  margin: 36px 0 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #80666c;
+}
+
+/* Booking button */
+.stay-book-button {
+  width: 100%;
+  max-width: 400px;
+  min-height: 70px;
+  margin-top: 42px;
+  padding: 18px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b99ba0;
+  border-radius: 50px;
+  color: #572532;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-decoration: none;
+  transition: background 0.25s ease;
+}
+
+.stay-book-button:hover {
+  background: rgba(87, 37, 50, 0.06);
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .where-to-stay {
+    padding: 70px 22px 85px;
+  }
+
+  .stay-card,
+  .stay-card-content {
+    min-height: 680px;
+  }
+
+  .stay-card-content {
+    padding: 175px 42px 85px;
+  }
+}
+
+@media (max-width: 480px) {
+  .where-to-stay {
+    padding: 40px 12px 55px;
+  }
+
+  .stay-section-title {
+    font-size: 36px;
+  }
+
+  .stay-hotels {
+    max-width: 330px;
+    margin-top: 22px;
+    gap: 14px;
+  }
+
+  .stay-card,
+  .stay-card-content {
+    min-height: 420px;
+  }
+
+  .stay-card-content {
+    padding: 95px 28px 38px;
+  }
+
+  .stay-hotel-name {
+    font-size: 25px;
+  }
+
+  .stay-hotel-details {
+    margin-top: 14px;
+    gap: 5px;
+  }
+
+  .stay-hotel-details p {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .stay-label {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .stay-description {
+    margin-top: 15px;
+    font-size: 11px;
+    line-height: 1.65;
+  }
+
+  .stay-book-button {
+    min-height: 44px;
+    margin-top: 16px;
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .stay-card-content {
+    padding-right: 34px;
+    padding-left: 34px;
+  }
+
+  .stay-hotel-name {
+    font-size: 26px;
+  }
+
+  .stay-hotel-details p {
+    font-size: 10px;
+  }
+}
+
+.stay-card,
+.stay-card-content {
+  min-height: 580px;
+}
+
+.stay-card-content {
+  padding: 135px 38px 65px;
+}
+
+.stay-hotels {
+  width: 100%;
+  max-width: 380px;
+  margin: 25px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.stay-card,
+.stay-card-content {
+  min-height: 460px;
+}
+
+.stay-card-content {
+  padding: 105px 30px 45px;
+}
+
+
+/* Balcony illustration above Where to Stay */
+.stay-balcony {
+  display: block;
+  width: clamp(100px, 44vw, 270px);
+  height: auto;
+  margin: 0 auto 18px;
+  object-fit: contain;
+}
+
+
+@media (max-width: 480px) {
+  .stay-balcony {
+    width: 180px;
+    margin-bottom: 18px;
+  }
+}
+
+
+.stay-book-button {
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #b99ba0;
+}
+
+.stay-book-button:focus,
+.stay-book-button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.stay-hotels {
+  max-width: 360px;
+  margin: 25px auto 0;
+  gap: 20px;
+}
+
+.stay-card,
+.stay-card-content {
+  min-height: 420px;
+}
+
+.stay-card-content {
+  padding: 90px 28px 45px;
+}
+
+@media (max-width: 480px) {
+  .stay-hotels {
+    max-width: 340px;
+    margin-top: 20px;
+    gap: 16px;
+  }
+
+  .stay-card,
+  .stay-card-content {
+    min-height: 420px;
+  }
+
+  .stay-card-content {
+    padding: 90px 28px 45px;
+  }
+
+  .stay-hotel-name {
+    font-size: 25px;
+  }
+
+  .stay-hotel-details {
+    margin-top: 16px;
+    gap: 7px;
+  }
+
+  .stay-description {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .stay-book-button {
+    min-height: 48px;
+    margin-top: 20px;
+  }
+}
+
+.stay-card {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-height: 420px;
+  box-sizing: border-box;
+  background-image: url("/assets/hotel-card-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-color: transparent;
+}
+
+.stay-hotels {
+  width: 100%;
+  max-width: 360px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

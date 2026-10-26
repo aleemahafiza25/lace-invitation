@@ -1,0 +1,197 @@
+
+.countdown-section {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: 420px;
+  min-height: 0;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #702638;
+  background-image: url("/assets/tulle-texture-burgundy.webp");
+  background-size: cover;
+  background-position: center;
+  color: #f8f0e5;
+}
+
+/* Top and bottom lace only */
+.countdown-lace {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  pointer-events: none;
+  background-image: url("/assets/lace-border-white.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.countdown-lace--top {
+  top: 0;
+}
+
+.countdown-lace--bottom {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+/* Decorative ribbon frame */
+.countdown-frame {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 400px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown-frame-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+
+/* Countdown text inside the ribbon */
+.countdown-text {
+  position: relative;
+  z-index: 1;
+  width: 75%;
+  text-align: center;
+}
+
+.countdown-text h2 {
+  margin: 0 0 18px;
+  color: #f8f0e5;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 5vw, 2.7rem);
+  line-height: 1.15;
+  font-weight: 400;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(6px, 2vw, 18px);
+}
+
+.countdown-timer > div {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-timer span {
+  color: #f8f0e5;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.3rem, 3.5vw, 2rem);
+  line-height: 1.2;
+}
+
+.countdown-timer small {
+  margin-top: 8px;
+  color: #f8f0e5;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(0.5rem, 1.3vw, 0.75rem);
+  white-space: nowrap;
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+  .countdown-section {
+    height: 400px;
+    padding: 0 12px;
+  }
+
+  .countdown-lace {
+    height: 55px;
+  }
+
+  .countdown-frame {
+    max-width: 350px;
+    height: 260px;
+  }
+
+  .countdown-text {
+    width: 72%;
+  }
+
+  .countdown-text h2 {
+    margin-bottom: 14px;
+    font-size: clamp(1.7rem, 7.5vw, 2.2rem);
+  }
+
+  .countdown-timer {
+    gap: 5px;
+  }
+
+  .countdown-timer span {
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
+  }
+
+  .countdown-timer small {
+    margin-top: 7px;
+    font-size: 0.5rem;
+  }
+}
+
+
+
+.countdown-lace {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  pointer-events: none;
+  background-image: url("/assets/lace-border-white.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.countdown-lace--top {
+  top: -30px;
+}
+
+.countdown-lace--bottom {
+  bottom: -30px;
+  transform: rotate(180deg);
+}
+
+.countdown-lace {
+  height: 170px;
+}
+
+.countdown-lace--top {
+  top: -8px;
+}
+
+.countdown-lace--bottom {
+  bottom: -8px;
+  transform: rotate(180deg);
+}
+
+.countdown-lace--top {
+  top: -60px;
+}
+
+.countdown-lace--bottom {
+  bottom: -60px;
+  transform: rotate(180deg);
+}
+
+.countdown-section {
+  height: 460px;
+}
+

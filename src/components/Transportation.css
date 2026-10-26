@@ -1,0 +1,278 @@
+
+.transportation {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: #f8f3eb;
+  background-color: #f8f5f2;
+}
+
+/* Separate burgundy texture image */
+.transportation-bg-image {
+  position: absolute;
+  top: 145px; /* Moves the image down from the top */
+  left: 0;
+  width: 100%;
+  height: 750px;
+  background-image: url("/assets/tulle-texture-burgundy.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Lace decorations */
+.transportation-lace {
+    /* top: 30px; */
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 240px;
+  background-image: url("/assets/lace-bow.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.transportation-lace-top {
+  top: 30px;
+}
+
+.transportation-lace-bottom {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+/* Main content */
+.transportation-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 300px 0 170px;
+  box-sizing: border-box;
+}
+
+/* Bus illustration */
+.transportation-bus {
+  display: block;
+  width: clamp(220px, 45vw, 360px);
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+  margin-top: 15px;
+}
+
+/* Heading */
+.transportation-title {
+  margin: 30px 0 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(42px, 8vw, 66px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: #f8f3eb;
+}
+
+/* Text */
+.transportation-intro,
+.transportation-details,
+.transportation-return {
+  width: 100%;
+  max-width: 460px;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(14px, 2.5vw, 19px);
+  font-weight: 400;
+  line-height: 1.8;
+  color: #d9c6c9;
+}
+
+.transportation-intro {
+  margin-top: 30px;
+}
+
+.transportation-details {
+  margin-top: 26px;
+}
+
+.transportation-return {
+  max-width: 390px;
+  margin-top: 26px;
+}
+
+/* Pickup button */
+.transportation-button {
+  width: min(100%, 440px);
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: 54px;
+  padding: 18px;
+  border: 1px solid rgba(248, 243, 235, 0.48);
+  border-radius: 50px;
+  color: #f8f3eb;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-decoration: none;
+  transition: background 0.25s ease;
+}
+
+.transportation-button:hover {
+  background: rgba(248, 243, 235, 0.08);
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .transportation-content {
+    padding-top: 280px;
+    padding-bottom: 210px;
+  }
+
+  .transportation-lace {
+    height: 190px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .transportation {
+    padding: 0 22px;
+  }
+
+  .transportation-lace {
+    height: 200px;
+  }
+
+  .transportation-content {
+    max-width: 100%;
+    padding: 270px 0 180px;
+  }
+
+  .transportation-bus {
+    width: 190px;
+    max-width: 75%;
+  }
+
+  .transportation-title {
+    margin-top: 26px;
+    font-size: clamp(34px, 9vw, 42px);
+  }
+
+  .transportation-intro,
+  .transportation-details,
+  .transportation-return {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .transportation-intro {
+    margin-top: 24px;
+  }
+
+  .transportation-details,
+  .transportation-return {
+    margin-top: 22px;
+  }
+
+  .transportation-desktop-break {
+    display: none;
+  }
+
+  .transportation-button {
+    min-height: 62px;
+    margin-top: 38px;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}
+
+
+.transportation-lace {
+  position: absolute;
+  left: 0;
+  width: 420px;
+  height: 260px; /* Increased from 240px */
+  background-image: url("/assets/lace-bow.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .transportation-lace {
+    height: 240px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .transportation-lace {
+    height: 250px;
+  }
+}
+
+
+
+/* Lace decorations */
+.transportation-lace {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: clamp(150px, 30vw, 300px);
+  background-image: url("/assets/lace-bow.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Top lace */
+.transportation-lace-top {
+  top: 30px;
+}
+
+/* Bottom lace */
+.transportation-lace-bottom {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .transportation-lace {
+    height: clamp(180px, 32vw, 240px);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .transportation-lace {
+    height: clamp(170px, 48vw, 220px);
+  }
+
+  .transportation-lace-top {
+    top: 55px;
+  }
+
+  .transportation-lace-bottom {
+    bottom: 0;
+  }
+}

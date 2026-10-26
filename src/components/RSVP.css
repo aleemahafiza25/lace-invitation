@@ -1,0 +1,515 @@
+
+.rsvp-section {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 10px 24px 70px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #4b0f1e;
+  color: #f8f3eb;
+}
+
+.rsvp-inner {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Heart illustration */
+.rsvp-heart {
+  display: block;
+  width: clamp(170px, 42vw, 260px);
+  max-width: 85%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 48px;
+}
+
+/* Heading */
+.rsvp-title {
+  margin: 0;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(48px, 9vw, 72px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: #f8f3eb;
+}
+
+/* Intro */
+.rsvp-description {
+  width: 100%;
+  max-width: 600px;
+  margin: 28px auto 72px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(14px, 2.5vw, 19px);
+  font-weight: 400;
+  line-height: 1.8;
+  color: #d9c6c9;
+}
+
+/* Form layout */
+.rsvp-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+.rsvp-label,
+.rsvp-attendance legend,
+.rsvp-plus-one legend {
+  padding: 0;
+  margin: 0 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #f8f3eb;
+}
+
+/* Text inputs */
+.rsvp-input {
+  display: block;
+  width: 100%;
+  min-height: 64px;
+  box-sizing: border-box;
+  padding: 16px 20px;
+  border: 1px solid rgba(248, 243, 235, 0.25);
+  border-radius: 9px;
+  background: transparent;
+  color: #f8f3eb;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.rsvp-input::placeholder {
+  color: #a98991;
+  opacity: 1;
+}
+
+.rsvp-input:focus {
+  outline: 1px solid #d9c6c9;
+  outline-offset: 2px;
+}
+
+/* Attendance */
+.rsvp-attendance {
+  min-width: 0;
+  margin: 60px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.rsvp-attendance legend,
+.rsvp-plus-one legend {
+  width: 100%;
+  margin-bottom: 26px;
+}
+
+.rsvp-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 22px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #f8f3eb;
+  cursor: pointer;
+}
+
+.rsvp-option input {
+  width: 25px;
+  height: 25px;
+  flex: 0 0 25px;
+  margin: 0;
+  accent-color: #f8f3eb;
+  cursor: pointer;
+}
+
+/* Continuation */
+.rsvp-extra {
+  width: 100%;
+  margin-top: 42px;
+}
+
+.rsvp-plus-one {
+  min-width: 0;
+  margin: 0 0 58px;
+  padding: 0;
+  border: 0;
+}
+
+.rsvp-extra-title {
+  display: block;
+  margin: 0 0 22px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #f8f3eb;
+}
+
+/* Children counter */
+.rsvp-children {
+  margin-bottom: 58px;
+}
+
+.rsvp-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  max-width: 370px;
+}
+
+.rsvp-counter button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  flex: 0 0 60px;
+  border: 1px solid rgba(248, 243, 235, 0.4);
+  border-radius: 50%;
+  background: transparent;
+  color: #f8f3eb;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.rsvp-counter button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.rsvp-counter span {
+  flex: 1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Dietary and note fields */
+.rsvp-extra-field {
+  margin-bottom: 58px;
+}
+
+.rsvp-sub-label {
+  display: block;
+  margin: 0 0 12px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #b99ba2;
+}
+
+.rsvp-textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+/* Submit */
+.rsvp-submit {
+  align-self: center;
+  width: 100%;
+  max-width: 440px;
+  min-height: 58px;
+  margin-top: 32px;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(248, 243, 235, 0.55);
+  border-radius: 50px;
+  background: transparent;
+  color: #f8f3eb;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.rsvp-submit:hover {
+  background-color: rgba(248, 243, 235, 0.08);
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .rsvp-section {
+    padding: 16px 30px 65px;
+  }
+
+  .rsvp-heart {
+    width: 230px;
+    margin-bottom: 42px;
+  }
+
+  .rsvp-description {
+    margin-bottom: 60px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .rsvp-section {
+    padding: 8px 24px 55px;
+  }
+
+  .rsvp-heart {
+    width: 220px;
+    max-width: 85%;
+    margin-bottom: 38px;
+  }
+
+  .rsvp-title {
+    font-size: 52px;
+  }
+
+  .rsvp-description {
+    margin: 26px auto 58px;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .rsvp-label,
+  .rsvp-attendance legend,
+  .rsvp-plus-one legend {
+    font-size: 15px;
+  }
+
+  .rsvp-input {
+    min-height: 58px;
+    padding: 14px 16px;
+    font-size: 16px;
+  }
+
+  .rsvp-attendance {
+    margin-top: 48px;
+  }
+
+  .rsvp-attendance legend,
+  .rsvp-plus-one legend {
+    margin-bottom: 22px;
+  }
+
+  .rsvp-option {
+    gap: 12px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .rsvp-extra {
+    margin-top: 38px;
+  }
+
+  .rsvp-plus-one {
+    margin-bottom: 58px;
+  }
+
+  .rsvp-extra-title {
+    font-size: 15px;
+  }
+
+  .rsvp-counter button {
+    width: 56px;
+    height: 56px;
+    flex-basis: 56px;
+  }
+
+  .rsvp-counter span {
+    font-size: 15px;
+  }
+
+  .rsvp-children,
+  .rsvp-extra-field {
+    margin-bottom: 48px;
+  }
+
+  .rsvp-textarea {
+    min-height: 160px;
+  }
+
+  .rsvp-submit {
+    min-height: 54px;
+    margin-top: 28px;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 360px) {
+  .rsvp-section {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .rsvp-heart {
+    width: 190px;
+  }
+
+  .rsvp-title {
+    font-size: 46px;
+  }
+
+  .rsvp-description {
+    font-size: 13px;
+  }
+
+  .rsvp-option {
+    font-size: 14px;
+  }
+}
+
+
+.rsvp-label,
+.rsvp-attendance legend,
+.rsvp-plus-one legend {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f8f3eb;
+}
+
+.rsvp-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 22px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f8f3eb;
+  cursor: pointer;
+}
+
+.rsvp-heart {
+  display: block;
+  width: 160px;
+  max-width: 70%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 32px;
+}
+
+@media (max-width: 480px) {
+  .rsvp-heart {
+    width: 140px;
+    max-width: 70%;
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 360px) {
+  .rsvp-heart {
+    width: 125px;
+  }
+}
+
+
+
+.rsvp-section {
+  margin-top: 0 !important;
+  border-top: none !important;
+}
+
+.rsvp-inner {
+  margin-top: 0;
+}
+
+/* Remove any gap between adjacent sections */
+section + .rsvp-section {
+  margin-top: 0;
+}
+
+
+.rsvp-section {
+  margin: -2px 0 0 !important;
+  padding-top: 0 !important;
+  border: none !important;
+  position: relative;
+  z-index: 1;
+}
+
+.rsvp-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #4b1020;
+  pointer-events: none;
+}
+
+/* RSVP attendance text */
+.rsvp-attendance legend,
+.rsvp-plus-one legend {
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  margin-bottom: 20px;
+}
+
+.rsvp-option {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  gap: 12px;
+}
+
+.rsvp-option span {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+/* Reduce spacing between RSVP options */
+.rsvp-attendance,
+.rsvp-plus-one {
+  margin-bottom: 32px;
+}
+
+/* Children heading */
+.rsvp-extra-title {
+  font-size: 17px !important;
+  font-weight: 400 !important;
+}
+
+/* Children counter text */
+.rsvp-counter span {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.rsvp-counter button {
+  font-weight: 400 !important;
+}
+
+.rsvp-attendance legend,
+.rsvp-plus-one legend {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.rsvp-option,
+.rsvp-option span {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+}
+
+.rsvp-extra-title {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.rsvp-counter span {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+}

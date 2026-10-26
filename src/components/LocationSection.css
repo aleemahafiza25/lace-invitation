@@ -1,0 +1,128 @@
+
+.location-section {
+  position: relative;
+  width: 100%;
+  padding: 75px 22px 85px;
+  overflow: hidden;
+  background: #f8f4ed;
+  color: #702638;
+  text-align: center;
+}
+
+.location-content {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.location-eyebrow {
+  margin: 0 0 14px;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #92747a;
+}
+
+.location-content h2 {
+  margin: 0;
+  font-family: "Ballet", cursive;
+  font-size: clamp(3rem, 10vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #702638;
+}
+
+.location-city {
+  margin: 12px 0 28px;
+  font-family: Montserrat, sans-serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #85656c;
+}
+
+.location-description {
+  max-width: 390px;
+  margin: 0 auto 30px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #755b60;
+}
+
+.location-description p {
+  margin: 0 0 14px;
+}
+
+.location-illustration {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto 28px;
+}
+
+.location-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.location-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 28px;
+  border: 1px solid #927078;
+  border-radius: 30px;
+  color: #702638;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.location-button:hover {
+  background: #702638;
+  color: #fff8f0;
+}
+
+@media (max-width: 480px) {
+  .location-section {
+    padding: 60px 20px 70px;
+  }
+
+  .location-description {
+    font-size: 14px;
+  }
+
+  .location-illustration {
+    max-width: 340px;
+  }
+}
+
+.location-label {
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #702638;
+}
+
+.location-section {
+  padding-bottom: 25px;
+}
+
+.timeline-garland {
+  margin-top: -9rem;
+}
+
+@media (max-width: 480px) {
+  .location-section {
+    padding-bottom: 20px;
+  }
+
+  .timeline-garland {
+    margin-top: -7rem;
+  }
+}
